@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="contactstyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Nav Js -->
+    <script src="nav.js" type="text/javascript"></script>
+    <!-- GOogle Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!-- FOnt Awesom Kit -->
+    <script src="https://kit.fontawesome.com/8e0e23429f.js" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <!--Navigation Bar Toggle(only for mobile)-->
+        <div class="toggle">
+            <h1 onclick="window.location.href='index.html'" class="moblabel">Shoely</h1>
+            <i class="fas fa-bars menu"></i>
+        </div>
+        <!--Navigation Bar Toggle(only for mobile) Ends-->
+        <label onclick="window.location.href='index.html'" class="logo">Shoely</label>
+        <ul>
+            <li><a href="index.html#main">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#partners">Our Partners</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <center><div class="chead">Contact Us</div></center>
+        <center><input type="text" placeholder="Your Name"></center>
+        <center><input type="email" placeholder="Your Email"></center>
+        <center><textarea placeholder="Your Message" cols="30" rows="10"></textarea></center>
+        <center><button onclick="alert('Message Sent Successfully!')" style="padding: 15px 30px;border: none;background-color: black;color: white;border-radius: 20px;font-family: 'Questrial', sans-serif;outline: none;cursor: pointer;">Submit</button></center>
+    </div>
+</body>
+
+</html>

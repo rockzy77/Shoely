@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 187, 0, 0.781), rgba(255, 187, 0, 0.781)), url(cbg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
+}
+
+.chead{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 18px;
+}
+
+.contact-form input{
+    padding: 10px 26px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Questrial', sans-serif;
+    outline: none;
+    border: none;
+}
+
+.contact-form textarea{
+    padding: 10px 26px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+    border: none;
+    font-family: 'Questrial', sans-serif;
+}
+

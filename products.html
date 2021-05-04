@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productstyle.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Nav JS -->
+    <script src="nav.js" type="text/javascript"></script>
+    <!-- Products JS -->
+    <script type="text/javascript" src="products.js"></script>
+    <!-- GOogle Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <!-- FOnt Awesom Kit -->
+    <script src="https://kit.fontawesome.com/8e0e23429f.js" crossorigin="anonymous"></script>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Products</title>
+</head>
+
+<body>
+
+    <!-- Cart -->
+    <!-- Black Screen When Cart Opens -->
+    <div onclick="closeCart()" id="blackscreen"></div>
+
+    <!-- Cart Body -->
+    <div id="cartbody">
+        <br>
+        <br>
+
+        <button id="cartclosebtn" onclick="closeCart()">x</button>
+        <br>
+        <br>
+        <br>
+        <center>
+            <h1>Cart</h1>
+        </center>
+
+        <section class="shoppingCart" id="shoppingCart">
+
+
+            <div class="small-container cart-page">
+                <table class="cartTable">
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>SubTotal</th>
+                    </tr>
+                </table>
+
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Total</td>
+                            <td class="cart-totalprice">$0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="purchasebtndiv">
+            <center><button class="purchasebtn" onclick="window.location.href='products.html'">OrderNow</button>
+            </center>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <!--Navigation Bar Toggle(only for mobileAdd To Basket
+            <h1 onclick="window.location.href='index.html'" class="moblabel">Shoely</h1>
+            <i class="fas fa-bars menu"></i>
+        </div>
+        <!--Navigation Bar Toggle(only for mobile) Ends-->
+        <label onclick="window.location.href='index.html'" class="logo">Shoely</label>
+        <ul>
+            <li><a href="index.html#main">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#partners">Our Partners</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="javascript:void(0);" onclick="showCart()"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <center>
+        <h1 class="shead">Available Products</h1>
+    </center>
+
+    <div class="wrapper2">
+
+        <div class="our_product" id="our_product">
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s1.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Nike Sports Marroon</h3>
+                <span class="spanprice">$55.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s2.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Nike Sports Black</h3>
+                <span class="spanprice">$70.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s3.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Casual Grey</h3>
+                <span class="spanprice">$40.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s4.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Crocs Official Brown</h3>
+                <span class="spanprice">$60.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s5.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Nike Sports Grey'</h3>
+                <span class="spanprice">$60.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s6.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Nike Sports Red</h3>
+                <span class="spanprice">$58.20</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s7.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Vans Casual Black and White</h3>
+                <span class="spanprice">$48.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s8.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Sports Black</h3>
+                <span class="spanprice">$80.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s9.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Vans Casual Grey</h3>
+                <span class="spanprice">$59.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s10.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Crocs Sports Black</h3>
+                <span class="spanprice">$75.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s11.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Salomon Sports Red</h3>
+                <span class="spanprice">$45.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s12.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Croc Official Black</h3>
+                <span class="spanprice">$76.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s13.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Vans Sports Brown</h3>
+                <span class="spanprice">$57.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s14.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Nike Sports Blue</h3>
+                <span class="spanprice">$58.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s15.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Sports Red</h3>
+                <span class="spanprice">$69.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s16.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Sports Purple</h3>
+                <span class="spanprice">$64.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s17.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Sports Yellow</h3>
+                <span class="spanprice">$75.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+            <div class="product_list">
+                <div class="product_img">
+                    <img class="spanImage" src="s18.png" alt="our_team">
+                </div>
+
+                <h3 class="h3">Adidas Sports Blue</h3>
+                <span class="spanprice">$48.00</span>
+                <p><button class="orderbtn" onclick="cartIncrease()">Add To Basket</button></p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>Shoely</h2>
+                <p>Good Shoes take You Good Place. So choose the best</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/profile.php?id=100038983247232" target="_blank"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/ali.rockzy" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#homePage">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#partners">Our Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Kollam, Kerala<br>
+                            India
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:918592805159">+91 8592805159</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:alirockzy77@gmail.com">alirockzy77@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright &copy; 2021 Shoely. All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>
